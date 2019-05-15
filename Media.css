@@ -1,0 +1,51 @@
+@media only screen and (max-width: 576px){
+    #myMenu{
+    width: 100%;
+    left: 0px;   
+    }
+    #stravaname{position: absolute; top: 335px; left: 20px;
+    }
+    #strava{bottom: 110px; left: 15%; width: 75%}
+    #table1 th{bottom: 150px; left: 60%;
+    }
+    #Skt{bottom: 130px; width: 100%; text-align: center;}
+    #s{bottom: 150px;} 
+    #p{bottom: 150px}
+    .container{width: 200px; height: 150px;}
+    .container .content a{width: 170px; height: 150px;}
+    .container .content{bottom: 40px;}  
+}
+
+@media only screen and (max-width: 700px, min-width:576){
+    #strava{height: 250px;}
+}
+@media only screen and (max-width: 800px, min-width:700){
+    #strava{height: 300px;}
+    
+}
+@media only screen and (max-width: 900px, min-width:800){
+    #strava{height: 350px;}
+    
+}
+@media only screen and (max-width: 620px){
+    #strava{height: 250px;}
+}
+
+@media only screen and (min-width: 955px){
+    #stravaname{position: absolute; top: 70px; left: 20px;}
+    #strava{height: 400px; left: 340px; bottom: 150px;}
+    #table1 th{bottom: 475px;}
+    #Skt{bottom: 460px}
+    
+}
+@media only screen and (min-width:900px){
+    #r2{left: 50%; top: -520px}
+    #r3{top: -480px;}
+    
+}
+@media only screen and (min-width:1200px){
+    #r2{left: 33%; top: -520px}
+    #r3{left: 66%; top: -840px;}
+    
+    
+}

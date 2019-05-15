@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+<title>Десерти</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="Style.css" rel="stylesheet">
+<link href="Media.css" rel="stylesheet">
+ <link rel="shortcut icon" href="Znachok.ico" type="image/x-icon"><script>
+function Function(){
+ document.getElementById("myMenu").style.visibility = 'visible';}
+    </script>
+    <style>
+    .container {top: 30px;
+  position:relative;
+  display: block;
+  width: 400px; height: 300px; top: -200px; margin: 20px;}
+
+.container img { position: relative; 
+ width: 200px; height: 100%;}
+
+.container .content {
+  height: 25%;
+  position: relative;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); 
+  color: black;
+  width: 100%;
+  padding: 20px;
+  bottom: 73px;
+}
+    .container .content a{ position: absolute; width: 370px; height: 302px;
+    border: 2px solid black; bottom: 0px;
+    left: 0px;}
+    .container .content h2{ position: relative; bottom: 22px; color: white;
+    right: }
+    
+    
+    
+    
+    
+    
+    
+    </style>
+
+</head>
+<body>
+
+<div class="navbar">
+  <a class="col-12 col-sm-2 col-md-2 " href="Vsi.html">Всі</a>
+  <a  class="col-12 col-sm-2 col-md-2 " href="Osnovni.html">Основні страви</a>
+  <a  class="col-12 col-sm-2 col-md-2 " href="Salati.html">Салати</a>
+  <a  class="col-12 col-sm-2 col-md-2 " href="Supi.html">Супи</a>
+  <a  class="col-12 col-sm-2 col-md-2 " href="Deserty.html">Десерти</a>
+    
+    
+
+    
+    
+    
+    
+    
+    <input type="text" id="mySearch" onkeyup="myFunction()"
+           class="col-12 col-sm-2 col-md-2 col-lg-2 "
+        placeholder="Пошук.." title="Type in a category"
+           onclick="Function()"
+           
+           >
+           
+    </div>
+    
+    
+     <ul id="myMenu" onmouseover="Function()" onmouseout="visible()">
+      <li><a href="Vareniki.html">Вареники з картоплею</a></li>
+      <li><a href="Ragu.html">Рагу із заморожених овочів</a></li>
+      <li><a href="ZapechenaKartoplya.html">Запечена картопля з грибами</a></li>
+      <li><a href="KrabSalat.html">Салат із крабових паличок і печериць</a></li>
+      <li><a href="Olivye.html">Олів'є з яблуком та свіжим огірком</a></li>
+      <li><a href="SuhSalat.html">Салат з сухариками</a></li>
+      <li><a href="Harcho.html">Суп харчо з рисом і свининою</a></li>
+      <li><a href="SupLok.html">Суп з локшиною</a></li>
+      <li><a href="Borshch.html">Борщ з куркою</a></li>
+      <li><a href="YaPyrig.html">Пиріг з яблуками, горіхами та корицею</a></li>
+      <li><a href="YaKlar.html">Яблука в клярі</a></li>
+      <li><a href="Mlintsi.html">Млинці по-ірландськи </a></li>
+         
+    </ul>
+    <div class="container" id="r1" style="">
+  <img src="Depositphotos_89019016_m-2015.webp" style="width:100%;">
+  <div class="content">
+      <h2>Пиріг з яблуками, горіхами та корицею</h2>
+      <a href="YaPyrig.html"></a>
+  </div>
+</div>
+<div class="container" id="r2"style="left: ">
+  <img src="99665f.webp" style="width: 100%;">
+  <div class="content">
+      <h2>Яблука в клярі</h2>
+      <a href="YaKlar.html"></a>
+  </div>
+</div>
+<div class="container" id="r3" style="">
+  <img src="Depositphotos_60863709_m-2015.webp" style="width: 100%;">
+  <div class="content">
+      <h2>Млинці по-ірландськи</h2>
+      <a href="Mlintsi.html"></a>
+  </div>
+</div>
+
+    
+    
+    
+    
+    
+    
+    
+<footer></footer>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+    
+function visible(){
+ document.getElementById("myMenu").style.visibility = 'hidden';
+
+}
+ 
+
+    
+
+function myFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("mySearch");
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myMenu");
+  li = ul.getElementsByTagName("li");
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+</script>
+
+ 
+
+
+</body>
+</html>
